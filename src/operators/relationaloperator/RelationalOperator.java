@@ -1,4 +1,4 @@
-package arithmeticoperators.relationaloperator;
+package operators.relationaloperator;
 
 public class RelationalOperator {
 

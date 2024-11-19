@@ -1,4 +1,4 @@
-package arithmeticoperators.logicaloperators;
+package operators.logicaloperators;
 
 public class LogicalOperator {
 
@@ -6,7 +6,7 @@ public class LogicalOperator {
  //      boolean x = true;
  //      boolean y = false;
 
-       boolean a = true , b = false;
+       boolean a = false , b = true;
         System.out.println("AND: " + (a && b));
         System.out.println("OR: " + (a || b));
         System.out.println("NOT: " + (!a));
