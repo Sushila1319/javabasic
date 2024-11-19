@@ -12,7 +12,7 @@ public class Employee {
         System.out.println("Job title :" + jobTitle );
         System.out.println("Current salary :  " + salary);
         System.out.printf("Previous salary : " + lastYearSalary);
-        if (salary>lastYearSalary) {
+        if (salary>lastYearSalary) {    
             System.out.println("You are awesome!!");
         } else {
             System.out.println("Try hard!!");
