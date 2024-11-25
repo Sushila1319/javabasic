@@ -5,6 +5,8 @@ public class Main {
         ForLoopExample forLoop = new ForLoopExample();
         forLoop.printNumber();
         System.out.println("----Table---");
+        forLoop.decrementNumber();
+        System.out.println("---Decrement----");
         forLoop.printTable();
     }
 }

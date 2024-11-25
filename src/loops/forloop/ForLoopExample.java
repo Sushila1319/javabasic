@@ -8,6 +8,13 @@ public class ForLoopExample {
         }
 
     }
+    public void decrementNumber(){
+        for (int i = 9; i > 0; i--) {
+            System.out.println(i);
+
+        }
+    }
+
     public void printTable(){
         int number = 5;
 
