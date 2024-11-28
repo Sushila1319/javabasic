@@ -1,5 +1,7 @@
 package arrays.singledimensionalarray;
 
+import java.util.Scanner;
+
 public class SingleDimensionalArray {
     public void explainArray(){
         int[] numbers = {10, 20, 30, 40, 50}; //size:5
@@ -48,15 +50,58 @@ public class SingleDimensionalArray {
 
     public void reverseArray(){
         int[] numbers = {10, 20, 30, 40};
-        //40, 30, 20, 10
-        //20, 10, 30, 40
-        //20 30 10 40
+        int[] numbersOddCount = {10,20,30,40,50};
 
+        System.out.println("----Before reverse Order----");
+        System.out.println("numbers[0]: " + numbers[0]);
+        System.out.println("numbers[1]: " + numbers[1]);
+        System.out.println("numbers[2]: " + numbers[2]);
+        System.out.println("numbers[3]: " + numbers[3]);
 
-        for(int left = 0, right = numbers.length - 1; left < right; left++,right--){
+        for (int left = 0, right = numbers.length - 1; left <right && right >2; left++,right--){
 
+            int temp = numbers[left];
+            numbers[left] = numbers[right];
+            numbers[right] = temp;
         }
+        System.out.println("----After reverse Order----");
+        System.out.println("numbers[0]: " + numbers[0]);
+        System.out.println("numbers[1]: " + numbers[1]);
+        System.out.println("numbers[2]: " + numbers[2]);
+        System.out.println("numbers[3]: " + numbers[3]);
     }
+        public void searchElementInArray(){
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.println("Enter the size of the array");
+            int size = scanner.nextInt();
+
+            int[] numbers = new int[size];
+            System.out.println("Enter " + size + " elements");
+
+            for(int i = 0; i <= size; i++){
+                numbers[i] = scanner.nextInt();
+
+            }
+            System.out.println("Enter the number to search: ");
+            int searchElement = scanner.nextInt();
+            Integer searchedIndex = null;
+            for(int i = 0; i< numbers.length;i++){
+                if(numbers[i]==searchElement){
+                searchedIndex=i;
+                break;
+                }
+            }
+            if (null != searchedIndex){
+                System.out.println("The found array is " + searchedIndex);
+            }
+            else{
+                System.out.println("Element is not found at any index");
+            }
+        }
+
+
+
 
 }
 

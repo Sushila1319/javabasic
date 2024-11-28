@@ -7,5 +7,6 @@ public class MainSingle {
         single.findMaxMinValue();
         single.findSumInAverage();
         single.reverseArray();
+        single.searchElementInArray();
     }
 }
