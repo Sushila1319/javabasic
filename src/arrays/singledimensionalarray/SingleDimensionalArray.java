@@ -1,8 +1,7 @@
-package array.singledimensional;
+package arrays.singledimensionalarray;
 
 public class SingleDimensionalArray {
-
-    public void explainArray() {
+    public void explainArray(){
         int[] numbers = {10, 20, 30, 40, 50}; //size:5
         // float[] floatNumbers = {1.2f, 1.6f};
         // long[] longNumbers = {10, 20, 30, 40, 50};
@@ -46,5 +45,18 @@ public class SingleDimensionalArray {
         System.out.println("The sum is " + sum);
         System.out.println("The average is " + (sum / numbers.length));
     }
+
+    public void reverseArray(){
+        int[] numbers = {10, 20, 30, 40};
+        //40, 30, 20, 10
+        //20, 10, 30, 40
+        //20 30 10 40
+
+
+        for(int left = 0, right = numbers.length - 1; left < right; left++,right--){
+
+        }
+    }
+
 }
 
