@@ -1,6 +1,4 @@
-package WAP.FindThePrimeAndSum;
-
-import java.util.Scanner;
+package WAP.findtheprimeandsum;
 
 public class SumMain {
     public static void main(String[] args) {

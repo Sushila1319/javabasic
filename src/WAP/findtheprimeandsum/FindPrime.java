@@ -1,4 +1,4 @@
-package WAP.FindThePrimeAndSum;
+package WAP.findtheprimeandsum;
 
 public class FindPrime {
   int number;

@@ -1,11 +1,21 @@
 package encapsulation.accessmodifiers;
 
+import encapsulation.accessmodifiers.defaultexample.DefaultModifierExample;
+
 public class Main {
     public static void main(String[] args) {
         Product product = new Product();
         product.setName("John");
-        System.out.println(product.getName());
+        product.setPrice(10);
+        product.setGrade('A');
+        product.setSerialNumber(1234L);
+        product.setDiscount(20d);
 
+        System.out.println(product.getName());
+        System.out.println(product.getPrice());
+        System.out.println(product.getGrade());
+        System.out.println(product.getSerialNumber());
+        System.out.println(product.getDiscount());
 
 
     }

@@ -1,4 +1,4 @@
-package WAP.FindThePrimeAndSum;
+package WAP.findtheprimeandsum;
 
 import java.util.Scanner;
 
