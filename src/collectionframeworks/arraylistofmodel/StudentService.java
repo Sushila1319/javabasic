@@ -48,7 +48,7 @@ public class StudentService {
                          //New method
     public void hashMapWithStudentObject() {
         Map<Integer, StudentModel> hashMapOfStudents = new HashMap<>();
-
+        Map<String, Object> objectMap = new HashMap<>();
         hashMapOfStudents.put(100, new StudentModel());
         hashMapOfStudents.put(101, new StudentModel(1L, 'A', 2, "Harry"));
 
